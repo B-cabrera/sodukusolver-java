@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx-swt.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx.base.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx.controls.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx.fxml.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx.graphics.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx.media.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx.swing.jar",
+        "/Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib/javafx.web.jar"
+    ],
+    "java.project.sourcePaths": [
+        "."
+    ]
+}

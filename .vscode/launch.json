@@ -9,6 +9,7 @@
             "name": "Launch UI",
             "request": "launch",
             "mainClass": "UI",
+            "vmArgs": "--module-path /Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib --add-modules javafx.controls",
             "projectName": "Sudoku-Rescursion-Backtracking_d1d2fed9"
         },
         {
@@ -28,7 +29,6 @@
             "type": "java",
             "name": "Launch SudokuGame",
             "request": "launch",
-            "vmArgs": "--module-path /Users/brendeniws/Downloads/javafx-sdk-17.0.2/lib --add-modules javafx.controls",
             "mainClass": "SudokuGame",
             "projectName": "Sudoku-Rescursion-Backtracking_d1d2fed9"
         }

@@ -3,31 +3,19 @@
 public class SudokuGame {
 
     public static void main(String[] args) {
-        Board game = new Board();
-        int[][] setting = 
-        { {8,0,0,0,0,0,0,0,0},
-          {0,0,3,6,0,0,0,0,0},
-          {0,7,0,0,9,0,2,0,0},
-          {0,5,0,0,0,7,0,0,0},
-          {0,0,0,0,4,5,7,0,0},
-          {0,0,0,1,0,0,0,3,0},
-          {0,0,1,0,0,0,0,6,8},
-          {0,0,8,5,0,0,0,1,0},
-          {0,9,0,0,0,0,4,0,0} };
-
-        game.setBoard(setting);
-        solve(game);
-        
+        UI.main(args);
     }
 
 
     // wrapper for recursive method
-    public static void solve(Board board) {
-        if (!sudokuSolve(board)) 
-            System.out.println("No solution found");
+    public static String solve(Board board) {
+
+        if (!sudokuSolve(board))
+            return "Solution not found";
+            
         else {
-            System.out.println("A solution was found: ");
-            System.out.println(board);
+            // System.out.println("A solution was found: ");
+            return board.toString();
         }
     }
 

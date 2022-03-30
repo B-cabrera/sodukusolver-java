@@ -1,5 +1,3 @@
-
-
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -97,6 +95,7 @@ public class UI extends Application {
     
             this.changeScene(stg);
 
+
         });
     }
 
@@ -150,12 +149,21 @@ public class UI extends Application {
         tempMessage.setFont(new Font(20));
 
         Group top = new Group(tempMessage,goBack);
-        Scene changed = new Scene(top);
-        
 
         goBack.setOnAction(e -> {
-            System.out.println("Going Back !!");
+            // this.originalScene();
+            try {
+                this.start(newStage);
+            } catch (Exception b) {
+                System.out.println("Shit went wrong !!!");
+            }
+            
         });
+
+        Scene changed = new Scene(top);
+
+        
+        newStage.setMinHeight(400);
         newStage.setScene(changed);
     }
 
